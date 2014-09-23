@@ -1,3 +1,7 @@
+#![crate_type = "rlib"]
+// The library is named "erty"
+#![crate_name = "toolbelt"]
+
 /* Optimize for efficiency later, we just return a String, could slice */
 trait StringUtil: Str {
   fn chomp(&self) -> String;
