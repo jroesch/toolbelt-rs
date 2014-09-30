@@ -2,8 +2,9 @@
 // The library is named "erty"
 #![crate_name = "toolbelt"]
 
+/* Move to EasyStrings or similarly named module */
 /* Optimize for efficiency later, we just return a String, could slice */
-trait StringUtil: Str {
+pub trait StringUtil: Str {
   fn chomp(&self) -> String;
   fn reverse(&self) -> String;
 }
